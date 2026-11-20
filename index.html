@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Grêmio Estudandil">
+  <title>Grêmio Estudantil Heronaldo Ramos</title>
+  <link rel="icon" href="midia/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <style>
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <h1>Grêmio Estudantil Heronaldo Ramos</h1>
+        <p>A voz da revolução. Aqui você conhece nossa história, nossas diretorias e como participar.</p>
+        <a class="btn" href="#galeria">Ver fotos e vídeos</a>
+      </div>
+      <img src="midia/logo.png" alt="Emblema do Grêmio Estudantil Heronaldo Ramos">
+    </div>
+  </header>
+
+  <main>
+    <section id="galeria">
+      <div class="wrap">
+        <h2>Fotos e vídeos</h2>
+        <p class="lead">Registros das nossas apresentações, encontros e conquistas.</p>
+        <p>Feito pelos estudantes</p>
+        <div class="galeria-wrapper">
+          <button class="seta esquerda" onclick="rolarGaleria(-1)">&#10094</button>
+          <div class="galeria" id="galeria-grade">
+            <div class="item"><img src="midia/mesario.jpg"
+                alt="Mesa decorada com as bandeiras do Brasil, da UEES e da Bahia, e telão ao fundo" loading="lazy"
+                onclick="abrirImagem(this.src)"></div>
+            <div class="item"><img src="midia/foto-conclusao.jpg"
+                alt="Estudantes e professores posando com as bandeiras do Brasil, da Bahia e da UEES" loading="lazy"
+                onclick="abrirImagem(this.src)">
+            </div>
+            <div class="item"><video src="midia/WhatsApp Video 2026-11-19 at 22.17.21.mp4" controls playsinline
+                preload="metadata" aria-label="Video do evento de posse do Grêmio Estudandil" onclick=></video></div>
+            <div class="item"><video src="midia/danca.mp4" controls playsinline preload="metadata"
+                aria-label="Video de apresentação de dança" onclick=></video></div>
+            <div class="item"><video src="midia/coral.mp4" controls playsinline preload="metadata"
+                aria-label="Vídeo do coral"></video></div>
+            <button class="seta direita" onclick="rolarGaleria(1)">&#10095</button>
+          </div>
+
+        </div>
+
+    </section>
+
+    <section id="diretorias" class="dir-sec">
+      <div class="wrap">
+        <h2>Nossas diretorias</h2>
+        <p class="lead">Cada diretoria cuida de uma parte do grêmio. Conheça o que cada diretoria faz.</p>
+        <div class="dirs">
+          <article class="dir">
+            <div class="foto"><img src="./midia/01_presidencia.png" alt="Brasão da Presidência"
+                class="brasao-diretoria"></div>
+            <h3>Presidência</h3>
+            <h2>José Rogério</h2>
+            <p>A Presidência é responsável por representar oficialmente o Grêmio Estudantil, coordenar suas atividades e
+              orientar o trabalho das demais diretorias. Cabe ao presidente acompanhar o desenvolvimento dos projetos,
+              promover o diálogo entre os integrantes e defender os interesses dos estudantes, buscando garantir que as
+              decisões e ações do Grêmio estejam alinhadas aos seus objetivos.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/02_vice_presidencia.png" alt="Brasão da Vice-Presidência"
+                class="brasao-diretoria"></div>
+            <h3>Vice-Presidência</h3>
+            <h2>Kauã</h2>
+            <p>A Vice-Presidência atua em conjunto com a Presidência, auxiliando na organização e no acompanhamento das
+              atividades do Grêmio. Também assume as responsabilidades da Presidência em sua ausência, contribuindo para
+              a continuidade dos trabalhos, a integração entre as diretorias e o cumprimento dos compromissos
+              estabelecidos.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/03_secretaria_geral.png" alt="Brasão da Secretaria"
+                class="brasao-diretoria"></div>
+            <h3>Secretaria Geral</h3>
+            <h2>Ana Vitória</h2>
+            <p>A Secretaria Geral é responsável pela organização administrativa e documental do Grêmio Estudantil. Entre
+              suas atribuições estão o registro de reuniões, a elaboração de atas, a organização de documentos e o
+              acompanhamento das decisões tomadas. Seu trabalho é fundamental para manter a transparência, a comunicação
+              interna e a organização institucional.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/04_primeira_secretaria.png" alt="Brasão da 1° Secretaria"
+                class="brasao-diretoria"></div>
+            <h3>1° Secretaria</h3>
+            <h2> Maria Vitória</h2>
+            <p>O Primeiro Secretário auxilia a Secretaria Geral na execução de suas atividades, colaborando com a
+              organização de documentos, registros e informações. Também contribui para o acompanhamento das reuniões e
+              das decisões do Grêmio, garantindo que as atividades administrativas sejam realizadas de maneira
+              organizada e eficiente</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/05_financas.png" alt="Brasão de Finanças" class="brasao-diretoria">
+            </div>
+            <h3>Finanças</h3>
+            <h2>Marcos</h2>
+            <p>A Diretoria de Finanças é responsável por acompanhar e organizar os recursos financeiros do Grêmio
+              Estudantil. Sua atuação envolve o controle de receitas e despesas, o registro das movimentações
+              financeiras e a prestação de contas. Busca garantir que os recursos sejam utilizados com responsabilidade,
+              transparência e de acordo com as necessidades e projetos da entidade.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/06_esportes_e_lazer.png" alt="Brasão do Esporte e Lazer"
+                class="brasao-diretoria"></div>
+            <h3>Esporte e Lazer</h3>
+            <h2>Vitória Martins</h2>
+            <p>A Diretoria de Esportes e Lazer tem como objetivo incentivar a prática esportiva, a integração e o
+              bem-estar dos estudantes. Por meio da organização de campeonatos, atividades recreativas e eventos
+              esportivos, busca promover a cooperação, o respeito, a saúde e o espírito de equipe, valorizando a
+              participação de todos.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/07_cultura_e_eventos.png" alt="Brasão de Cultura e Eventos"
+                class="brasao-diretoria"></div>
+            <h3>Cultura e Eventos</h3>
+            <h2>Marcelo</h2>
+            <p>A Diretoria de Cultura e Eventos trabalha para valorizar a diversidade cultural, a criatividade e as
+              diferentes formas de expressão presentes no ambiente escolar. É responsável por incentivar e organizar
+              eventos, apresentações, atividades artísticas e celebrações, criando oportunidades para que os estudantes
+              compartilhem seus talentos, conhecimentos e experiências.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/08_comunicacao.png" alt="Brasão da Comunicação"
+                class="brasao-diretoria"></div>
+            <h3>Comunicação</h3>
+            <h2>Maria Talita</h2>
+            <p>A Diretoria de Comunicação tem a missão de aproximar o Grêmio Estudantil da comunidade escolar,
+              garantindo que informações, projetos e iniciativas sejam divulgados de maneira clara e acessível. Atua na
+              produção de conteúdos, na administração dos canais de comunicação e na divulgação das atividades,
+              fortalecendo a participação e o diálogo entre os estudantes.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/09_direitos_humanos_e_inclusao.png"
+                alt="Brasão dos Direitos Humanos e Inclusão" class="brasao-diretoria"></div>
+            <h3>Direitos Humanos e Inclusão</h3>
+            <h2>Analya</h2>
+            <p>A Diretoria de Direitos Humanos e Inclusão busca promover um ambiente escolar baseado no respeito, na
+              igualdade e na valorização das diferenças. Atua na conscientização sobre os direitos fundamentais, no
+              incentivo à acessibilidade e no combate a todas as formas de discriminação. Seu compromisso é contribuir
+              para uma escola mais acolhedora, democrática e inclusiva.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/10_negros_e_negras.png" alt="Brasão do Combate ao Racismo"
+                class="brasao-diretoria"></div>
+            <h3>Combate ao Racismo</h3>
+            <h2>Mariana</h2>
+            <p>A Diretoria de Combate ao Racismo tem como propósito valorizar a identidade, a história e a cultura
+              afro-brasileira, além de combater o racismo e promover a igualdade racial no ambiente escolar. Busca
+              desenvolver ações de conscientização, incentivar o respeito à diversidade étnico-racial e fortalecer a
+              representatividade negra, contribuindo para uma comunidade escolar mais justa e livre de preconceitos.</p>
+          </article>
+          <article class="dir">
+            <div class="foto"><img src="./midia/11_estudantes_zona_rural.png" alt="Brasão dos estudantes da Zona Rural"
+                class="brasao-diretoria"></div>
+            <h3>Estudantes da Zona Rural</h3>
+            <h2>Emylliany</h2>
+            <p>A Diretoria de Estudantes da Zona Rural tem como objetivo representar os estudantes que vivem no campo,
+              dando visibilidade às suas necessidades, experiências e reivindicações. Busca fortalecer a participação
+              desses jovens nas decisões do Grêmio, valorizar suas origens e contribuir para a construção de uma
+              educação mais acessível, democrática e que respeite as particularidades da realidade rural.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="inspiracao" class="insp">
+      <div class="wrap">
+        <div>
+          <h2>A história do Grêmio Estudandil</h2>
+          <h3>Uma trajetória de participação, resistência e Transformação</h3>
+        </div>
+        <div>
+          <p>A história do Grêmio Estudantil está diretamente ligada à trajetória dos jovens que, ao longo dos anos,
+            compreenderam que a educação vai muito além das salas de aula. Ela também envolve participação, liberdade de
+            expressão, representatividade e a possibilidade de contribuir para as transformações da sociedade.</p>
+          <p>No Brasil, as primeiras iniciativas de organização estudantil começaram a ganhar força no início do século
+            XX. Em 1901, foi criada a Federação dos Estudantes Brasileiros e, em 1902, surgiu, em São Paulo, o primeiro
+            Grêmio Estudantil do país, inicialmente voltado para atividades recreativas, esportivas e culturais. Com o
+            passar do tempo, essas organizações passaram a assumir também um papel importante na representação dos
+            interesses dos estudantes e na discussão dos problemas da sociedade.</p>
+          <p>Em 1937, a criação da União Nacional dos Estudantes (UNE) fortaleceu a organização do movimento estudantil
+            brasileiro. Posteriormente, em 1948, os estudantes secundaristas organizaram sua própria entidade nacional,
+            que daria origem à União Brasileira dos Estudantes Secundaristas (UBES). Essas organizações ampliaram a
+            capacidade de mobilização dos jovens e contribuíram para que suas reivindicações alcançassem diferentes
+            espaços da sociedade.</p>
+          <p>Entretanto, essa trajetória não foi construída sem dificuldades. Durante a Ditadura Militar, iniciada em
+            1964, as organizações estudantis passaram a enfrentar perseguições, censura e restrições à liberdade de
+            organização. A Lei Suplicy de Lacerda, aprovada naquele mesmo ano, enfraqueceu a autonomia das entidades
+            estudantis e submeteu sua organização a limitações impostas pelo regime. Muitos estudantes foram
+            perseguidos, presos e reprimidos por defenderem a liberdade, a democracia e o direito de participação.</p>
+          <p>Mesmo diante dessas dificuldades, o movimento estudantil não deixou de existir. Jovens de diferentes
+            regiões do país continuaram se organizando, defendendo seus direitos e reivindicando melhores condições de
+            educação. As manifestações estudantis tornaram-se parte importante da resistência à ditadura e da luta pela
+            redemocratização brasileira.</p>
+          <p>Com o enfraquecimento do regime militar e o avanço do processo de redemocratização, a participação
+            estudantil voltou a conquistar espaço. Em 4 de novembro de 1985, foi sancionada a Lei nº 7.398, conhecida
+            como Lei do Grêmio Livre, que assegurou aos estudantes do ensino fundamental e médio o direito de organizar
+            grêmios estudantis autônomos, destinados à representação de seus interesses e à realização de atividades
+            educacionais, culturais, cívicas, esportivas e sociais. A legislação também estabeleceu a escolha de
+            representantes por meio do voto direto e secreto dos estudantes.</p>
+          <p>A partir desse reconhecimento, o Grêmio Estudantil consolidou-se como um importante instrumento de
+            participação democrática dentro das escolas. Seu papel deixou de estar restrito à organização de eventos e
+            atividades recreativas, passando a abranger a defesa dos direitos dos estudantes, o diálogo com a comunidade
+            escolar, a construção de propostas e o incentivo ao protagonismo juvenil.</p>
+          <p>Hoje, um Grêmio Estudantil representa muito mais do que uma equipe de alunos escolhida para ocupar
+            determinados cargos. Ele simboliza a união de diferentes ideias, realidades e perspectivas em torno de um
+            objetivo comum: construir uma escola na qual todos tenham voz, espaço e oportunidades de participação.</p>
+          <p>Sua importância está na capacidade de transformar reivindicações em propostas, ideias em projetos e
+            participação em ações concretas. É um espaço onde os estudantes aprendem a dialogar, assumir
+            responsabilidades, respeitar diferenças e compreender que as mudanças também começam com a iniciativa de
+            cada um.</p>
+          <p>Mais do que uma representação, o Grêmio Estudantil é a expressão de uma conquista histórica: o direito dos
+            estudantes de participarem ativamente da construção de sua própria realidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="homenagem">
+      <div class="wrap">
+        <h2>Homenagem a Heronaldo Ramos</h2>
+        <div class="hom-topo">
+          <div class="patrono"><img src="midia/Heronaldo.png" alt="Ilustração de Heronaldo Ramos no emblema do grêmio">
+          </div>
+          <p class="lead" style="margin:0">O Grêmio Estudantil Heronaldo Ramos nasce com o propósito de resgatar e
+            valorizar a cultura local, fortalecer a identidade do nosso povo e incentivar a participação ativa dos
+            jovens na construção de uma sociedade mais consciente. Além de ser um espaço de representação estudantil,
+            busca promover a formação política, crítica e cidadã, despertando nos estudantes o interesse pela história,
+            pelos seus direitos e pelo protagonismo social. Homenagear Heronaldo Ramos, historiador de Pindobaçu , é
+            reconhecer a importância daquele que dedicou sua vida à preservação da memória e da história de nossa
+            cidade, fazendo com que seu legado continue vivo nas novas gerações.</p>
+        </div>
+        <div class="msgs" id="msgs"></div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="wrap">
+        <div>
+          <h2>Fale com o grêmio</h2>
+          <p class="lead">Tem sugestão, dúvida ou quer participar? Mande uma mensagem para a nossa equipe.</p>
+          <ul class="canais">
+            <li><a href="https://www.instagram.com/gremioheronaldoramos" target="_blank" rel="noopener">Instagram</a>
+            </li>
+            <li><a href="mailto:gheronaldoramos@gmail.com">Gmail</a></li>
+          </ul>
+        </div>
+
+        <form action="https://formsubmit.co/gheronaldoramos@gmail.com" method="POST">
+
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="name" placeholder="Digite seu nome" minlength="2" maxlength="80"
+            autocomplete="name" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="message" placeholder="Escreva sua mensagem..." minlength="5" maxlength="2000"
+            required></textarea>
+
+          <input type="hidden" name="_subject" value="Nova mensagem - Grêmio Estudantil">
+
+          <p class="aviso-privacidade">
+            Suas informações serão utilizadas para o atendimento
+            da sua mensagem. Consulte nossa
+            <a href="privacidade.html">Política de Privacidade</a>.
+          </p>
+
+          <button class="btn" type="submit">
+            Enviar mensagem
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Grêmio Estudantil Heronaldo Ramos
+    <a href="privacidade.html">Políticas de Privacidade</a>
+  </footer>
+
+  <button class="pin" id="pin" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"></button>
+  <nav class="menu" id="menu" aria-label="Menu principal">
+    <a href="#inicio"><i>🏠</i>Início</a>
+    <a href="#galeria"><i>📷</i>Fotos e vídeos</a>
+    <a href="#diretorias"><i>👥</i>Diretorias</a>
+    <a href="#inspiracao"><i>💡</i>Inspiração</a>
+    <a href="#homenagem"><i>🎖️</i>Homenagem</a>
+    <a href="#contato"><i>✉️</i>Contato</a>
+  </nav>
+  <div id="visualizador" onclick="fecharImagem()">
+    <span class="fechar">&times;</span>
+    <img id="imagem-ampliada" src="" alt="">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
